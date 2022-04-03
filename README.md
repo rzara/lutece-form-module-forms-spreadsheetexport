@@ -1,0 +1,1 @@
+This plugin add OpenDocument and Excel export of forms responses.
