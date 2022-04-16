@@ -14,5 +14,14 @@
 		<constructor-arg type="java.lang.String" index="2"
 			value="module.forms.spreadsheetexport.openDocumentExport.description" />
 	</bean>
+	<bean id="forms-spreadsheetexport.excelExport"
+		class="fr.paris.lutece.plugins.forms.modules.spreadsheetexport.ExcelExport">
+		<constructor-arg type="java.lang.String" index="0"
+			value="forms-spreadsheetexport.excelExport" />
+		<constructor-arg type="java.lang.String" index="1"
+			value="module.forms.spreadsheetexport.excelExport.name" />
+		<constructor-arg type="java.lang.String" index="2"
+			value="module.forms.spreadsheetexport.excelExport.description" />
+	</bean>
 
 </beans>

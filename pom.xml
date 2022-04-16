@@ -42,6 +42,11 @@
 			<artifactId>odfdom-java</artifactId>
 			<version>0.9.0</version> <!-- last jdk8 compatible version -->
 		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.1.2</version> <!-- same version as imported via lutece-core -->
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
