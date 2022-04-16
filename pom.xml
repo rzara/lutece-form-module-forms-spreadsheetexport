@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<artifactId>lutece-global-pom</artifactId>
+		<groupId>fr.paris.lutece.tools</groupId>
+		<version>6.0.0</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.paris.lutece.plugins</groupId>
+	<artifactId>module-forms-spreadsheetexport</artifactId>
+	<packaging>lutece-plugin</packaging>
+
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Lutece forms spreadsheet export module</name>
+
+	<repositories>
+		<repository>
+			<id>lutece</id>
+			<name>luteceRepository</name>
+			<url>https://dev.lutece.paris.fr/maven_repository</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>fr.paris.lutece</groupId>
+			<artifactId>lutece-core</artifactId>
+			<version>[7.0.3,)</version>
+			<type>lutece-core</type>
+		</dependency>
+		<dependency>
+			<groupId>fr.paris.lutece.plugins</groupId>
+			<artifactId>plugin-forms</artifactId>
+			<version>[2.0.0,)</version>
+			<type>lutece-plugin</type>
+		</dependency>
+		<dependency>
+			<groupId>org.odftoolkit</groupId>
+			<artifactId>odfdom-java</artifactId>
+			<version>0.9.0</version> <!-- last jdk8 compatible version -->
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>xerces</groupId>
+				<artifactId>xercesImpl</artifactId>
+				<version>2.12.2</version> <!-- to bypass CVE-2022-23437 -->
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<scm>
+		<connection>scm:git:https://github.com/rzara/lutece-form-module-forms-spreadsheetexport.git</connection>
+		<developerConnection>scm:git:https://github.com/rzara/lutece-form-module-forms-spreadsheetexport.git</developerConnection>
+		<url>https://github.com/rzara/lutece-form-module-forms-spreadsheetexport.git</url>
+		<tag>HEAD</tag>
+	</scm>
+	<properties>
+		<componentName>forms-spreadsheetexport</componentName>
+		<jiraProjectName>FORMSSPREADSHEETEXPORT</jiraProjectName>
+		<jiraComponentId></jiraComponentId>
+	</properties>
+</project>
